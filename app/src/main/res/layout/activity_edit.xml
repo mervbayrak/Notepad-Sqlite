@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.example.merve.dbdemo.EditActivity">
+
+
+    <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:hint="Title"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:hint="Note"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sistemSaati"
+        android:visibility="gone"/>
+
+    <Button
+            android:id="@+id/btnSave"
+            android:text="Save Note"
+            android:onClick="saveNote"
+            android:textColor="@color/color4"
+            android:textSize="22dp"
+            android:background="@drawable/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
