@@ -6,14 +6,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:context="com.example.merve.dbdemo.EditActivity">
+            tools:context="com.example.merve.notepad_sqlite.EditActivity">
 
 
     <EditText
             android:id="@+id/etTitle"
             android:layout_width="match_parent"
-            android:hint="Title"
-            android:textSize="20dp"
+            android:hint="@string/title"
+            android:textSize="20sp"
             android:textColor="@color/colorAccent"
             android:layout_height="wrap_content"/>
 
@@ -22,8 +22,8 @@
             android:layout_width="match_parent"
             android:inputType="textMultiLine"
             android:textColor="@color/colorAccent"
-            android:textSize="20dp"
-            android:hint="Note"
+            android:textSize="20sp"
+            android:hint="@string/Note"
             android:layout_weight="1"
             android:layout_height="0dp"/>
     <TextView
@@ -34,10 +34,10 @@
 
     <Button
             android:id="@+id/btnSave"
-            android:text="Save Note"
+            android:text="@string/savenote"
             android:onClick="saveNote"
             android:textColor="@color/color4"
-            android:textSize="22dp"
+            android:textSize="22sp"
             android:background="@drawable/btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
